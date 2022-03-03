@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 50px auto;
+    background-color: #050210;
+}
+.circle-3{
+    width: 80px;
+    height: 80px;
+    border-radius:100%;
+    background:#050210;
+    margin: 10px;
+}
+.circle-2{
+    width: 80px;
+    height: 80px;
+    border-radius:100%;
+    background: rgb(1, 1, 31);
+    margin: 0px;
+    animation: fill 1s linear infinite;
+    
+
+}
+.circle{
+    left:100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background:linear-gradient(#fb5dad, #55fb9f ,#b97aff);
+    background-color: red;
+    padding:10px;
+    margin:70px auto;
+    filter: blur(0.5);
+    box-shadow:10px 10px 100px;
+    filter: blur(0.5px);
+    animation:spin 1s linear infinite;
+}
+@keyframes spin {
+    from{transform: rotate(0deg);
+    color: blue;}
+    to{ transform:rotate(359deg);
+    color:red;}
+}
+@keyframes fill {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+    
+}
